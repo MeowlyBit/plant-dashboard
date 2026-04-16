@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import StarField from "./components/StarField";
 import FloatingCat from "./components/FloatingCat";
@@ -17,7 +18,7 @@ import Home from "./pages/Home";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
 
       <div
         className="fixed inset-0 -z-10"
@@ -53,6 +54,6 @@ export default function App() {
         <Footer />
       </div>
 
-    </BrowserRouter>
+    </HashRouter>
   );
 }
